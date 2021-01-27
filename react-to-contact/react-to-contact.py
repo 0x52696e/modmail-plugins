@@ -36,7 +36,7 @@ class ReactToContact(commands.Cog):
         def check(reaction, user):
             return user == ctx.message.author
 
-        regex = r"discordapp\.com"
+        regex = r"discord\.com"
 
         if bool(re.search(regex, link)) is True:
             sl = link.split("/")
